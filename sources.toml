@@ -1,0 +1,569 @@
+# 信源清单。增删信源只改这个文件，改完跑 `uv run brief check-sources` 体检。
+#
+# section  板块：world 全球局势 | security 战争与安全 | macro 金融宏观 | tech AI 与硬科技 | bio 生命科学与医学 | longread 周日长文
+# role     用法：
+#   open      开放可读的新闻源：提供事实素材，入选后可补抓正文
+#   signal    付费墙 / 期刊目录 / 热度榜：只用 RSS 里的标题和摘要判断“什么重要”，从不抓正文
+#   official  官方一手发布：单源也可入选，入选后可补抓正文
+#   analysis  分析评论：一般只作背景，含重要新事实时才可入选
+# 可选字段：lang（默认 "en"）、max_age_days（覆盖默认时效）、note（会原样提示给模型）
+
+# ── 全球局势 ─────────────────────────────────────────────
+[[source]]
+id = "bbc-world"
+name = "BBC World"
+url = "https://feeds.bbci.co.uk/news/world/rss.xml"
+section = "world"
+role = "open"
+
+[[source]]
+id = "guardian-world"
+name = "The Guardian"
+url = "https://www.theguardian.com/world/rss"
+section = "world"
+role = "open"
+
+[[source]]
+id = "aljazeera"
+name = "Al Jazeera"
+url = "https://www.aljazeera.com/xml/rss/all.xml"
+section = "world"
+role = "open"
+
+[[source]]
+id = "dw-world"
+name = "DW"
+url = "https://rss.dw.com/rdf/rss-en-world"
+section = "world"
+role = "open"
+
+[[source]]
+id = "npr-world"
+name = "NPR World"
+url = "https://feeds.npr.org/1004/rss.xml"
+section = "world"
+role = "open"
+
+[[source]]
+id = "france24"
+name = "France 24"
+url = "https://www.france24.com/en/rss"
+section = "world"
+role = "open"
+
+[[source]]
+id = "bbc-zh"
+name = "BBC 中文"
+url = "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml"
+section = "world"
+role = "open"
+lang = "zh"
+
+[[source]]
+id = "nyt-world"
+name = "New York Times"
+url = "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+section = "world"
+role = "signal"
+
+[[source]]
+id = "ft-world"
+name = "Financial Times"
+url = "https://www.ft.com/world?format=rss"
+section = "world"
+role = "signal"
+
+[[source]]
+id = "economist-intl"
+name = "The Economist"
+url = "https://www.economist.com/international/rss.xml"
+section = "world"
+role = "signal"
+
+[[source]]
+id = "un-news"
+name = "UN News"
+url = "https://news.un.org/feed/subscribe/en/news/all/rss.xml"
+section = "world"
+role = "official"
+
+[[source]]
+id = "foreign-affairs"
+name = "Foreign Affairs"
+url = "https://www.foreignaffairs.com/rss.xml"
+section = "world"
+role = "analysis"
+
+[[source]]
+id = "foreign-policy"
+name = "Foreign Policy"
+url = "https://foreignpolicy.com/feed/"
+section = "world"
+role = "analysis"
+
+[[source]]
+id = "the-diplomat"
+name = "The Diplomat"
+url = "https://thediplomat.com/feed/"
+section = "world"
+role = "analysis"
+
+# ── 战争与安全 ───────────────────────────────────────────
+[[source]]
+id = "defense-news"
+name = "Defense News"
+url = "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml"
+section = "security"
+role = "open"
+
+[[source]]
+id = "breaking-defense"
+name = "Breaking Defense"
+url = "https://breakingdefense.com/feed/"
+section = "security"
+role = "open"
+
+[[source]]
+id = "defense-one"
+name = "Defense One"
+url = "https://www.defenseone.com/rss/all/"
+section = "security"
+role = "open"
+
+[[source]]
+id = "twz"
+name = "The War Zone"
+url = "https://www.twz.com/feed"
+section = "security"
+role = "open"
+
+[[source]]
+id = "kyiv-independent"
+name = "Kyiv Independent"
+url = "https://kyivindependent.com/news-archive/rss/"
+section = "security"
+role = "open"
+note = "冲突当事方媒体，单方说法需其他信源印证"
+
+[[source]]
+id = "times-of-israel"
+name = "Times of Israel"
+url = "https://www.timesofisrael.com/feed/"
+section = "security"
+role = "open"
+note = "冲突当事方媒体，单方说法需其他信源印证"
+
+[[source]]
+id = "war-on-the-rocks"
+name = "War on the Rocks"
+url = "https://warontherocks.com/feed/"
+section = "security"
+role = "analysis"
+
+[[source]]
+id = "crisis-group"
+name = "Crisis Group"
+url = "https://www.crisisgroup.org/rss.xml"
+section = "security"
+role = "analysis"
+max_age_days = 10
+
+[[source]]
+id = "bellingcat"
+name = "Bellingcat"
+url = "https://www.bellingcat.com/feed/"
+section = "security"
+role = "analysis"
+max_age_days = 10
+
+[[source]]
+id = "lawfare"
+name = "Lawfare"
+url = "https://www.lawfaremedia.org/feeds/articles"
+section = "security"
+role = "analysis"
+
+# ── 金融宏观 ─────────────────────────────────────────────
+[[source]]
+id = "cnbc-economy"
+name = "CNBC Economy"
+url = "https://www.cnbc.com/id/20910258/device/rss/rss.html"
+section = "macro"
+role = "open"
+
+[[source]]
+id = "ft-zh"
+name = "FT 中文网"
+url = "https://www.ftchinese.com/rss/news"
+section = "macro"
+role = "open"
+lang = "zh"
+
+[[source]]
+id = "bloomberg-markets"
+name = "Bloomberg"
+url = "https://feeds.bloomberg.com/markets/news.rss"
+section = "macro"
+role = "signal"
+
+[[source]]
+id = "bloomberg-economics"
+name = "Bloomberg"
+url = "https://feeds.bloomberg.com/economics/news.rss"
+section = "macro"
+role = "signal"
+
+[[source]]
+id = "ft-home"
+name = "Financial Times"
+url = "https://www.ft.com/rss/home"
+section = "macro"
+role = "signal"
+
+[[source]]
+id = "economist-finance"
+name = "The Economist"
+url = "https://www.economist.com/finance-and-economics/rss.xml"
+section = "macro"
+role = "signal"
+
+[[source]]
+id = "fed"
+name = "Federal Reserve"
+url = "https://www.federalreserve.gov/feeds/press_all.xml"
+section = "macro"
+role = "official"
+
+[[source]]
+id = "ecb"
+name = "ECB"
+url = "https://www.ecb.europa.eu/rss/press.html"
+section = "macro"
+role = "official"
+
+[[source]]
+id = "project-syndicate"
+name = "Project Syndicate"
+url = "https://www.project-syndicate.org/rss"
+section = "macro"
+role = "analysis"
+
+[[source]]
+id = "marginal-revolution"
+name = "Marginal Revolution"
+url = "https://marginalrevolution.com/feed"
+section = "macro"
+role = "analysis"
+
+[[source]]
+id = "noahpinion"
+name = "Noahpinion"
+url = "https://www.noahpinion.blog/feed"
+section = "macro"
+role = "analysis"
+
+[[source]]
+id = "liberty-street"
+name = "Liberty Street Economics"
+url = "https://libertystreeteconomics.newyorkfed.org/feed/"
+section = "macro"
+role = "analysis"
+
+# ── AI 与硬科技 ──────────────────────────────────────────
+[[source]]
+id = "mit-tr"
+name = "MIT Technology Review"
+url = "https://www.technologyreview.com/feed/"
+section = "tech"
+role = "open"
+
+[[source]]
+id = "ars"
+name = "Ars Technica"
+url = "https://feeds.arstechnica.com/arstechnica/index"
+section = "tech"
+role = "open"
+
+[[source]]
+id = "verge-ai"
+name = "The Verge"
+url = "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+section = "tech"
+role = "open"
+
+[[source]]
+id = "the-decoder"
+name = "The Decoder"
+url = "https://the-decoder.com/feed/"
+section = "tech"
+role = "open"
+
+[[source]]
+id = "techcrunch-ai"
+name = "TechCrunch"
+url = "https://techcrunch.com/category/artificial-intelligence/feed/"
+section = "tech"
+role = "open"
+
+[[source]]
+id = "ieee-spectrum"
+name = "IEEE Spectrum"
+url = "https://spectrum.ieee.org/feeds/feed.rss"
+section = "tech"
+role = "open"
+
+[[source]]
+id = "spacenews"
+name = "SpaceNews"
+url = "https://spacenews.com/feed/"
+section = "tech"
+role = "open"
+
+[[source]]
+id = "hn-300"
+name = "Hacker News"
+url = "https://hnrss.org/frontpage?points=300"
+section = "tech"
+role = "signal"
+note = "社区热度榜，只说明“技术圈在讨论”，不代表事实已被核实"
+
+[[source]]
+id = "openai"
+name = "OpenAI"
+url = "https://openai.com/news/rss.xml"
+section = "tech"
+role = "official"
+note = "厂商自述，性能说法需独立验证"
+
+[[source]]
+id = "deepmind"
+name = "Google DeepMind"
+url = "https://deepmind.google/blog/rss.xml"
+section = "tech"
+role = "official"
+note = "厂商自述，性能说法需独立验证"
+
+[[source]]
+id = "semianalysis"
+name = "SemiAnalysis"
+url = "https://newsletter.semianalysis.com/feed"
+section = "tech"
+role = "analysis"
+
+[[source]]
+id = "import-ai"
+name = "Import AI"
+url = "https://importai.substack.com/feed"
+section = "tech"
+role = "analysis"
+
+[[source]]
+id = "stratechery"
+name = "Stratechery"
+url = "https://stratechery.com/feed/"
+section = "tech"
+role = "analysis"
+
+[[source]]
+id = "latent-space"
+name = "Latent Space"
+url = "https://www.latent.space/feed"
+section = "tech"
+role = "analysis"
+
+[[source]]
+id = "simonw"
+name = "Simon Willison"
+url = "https://simonwillison.net/atom/everything/"
+section = "tech"
+role = "analysis"
+
+# ── 生命科学与医学 ───────────────────────────────────────
+[[source]]
+id = "stat"
+name = "STAT News"
+url = "https://www.statnews.com/feed/"
+section = "bio"
+role = "open"
+
+[[source]]
+id = "nature"
+name = "Nature"
+url = "https://www.nature.com/nature.rss"
+section = "bio"
+role = "open"
+note = "同时含新闻与论文目录；非生命科学的条目归入其他板块或忽略"
+
+[[source]]
+id = "science-news"
+name = "Science News"
+url = "https://www.science.org/rss/news_current.xml"
+section = "bio"
+role = "open"
+note = "综合科学新闻；非生命科学的条目归入其他板块或忽略"
+
+[[source]]
+id = "endpoints"
+name = "Endpoints News"
+url = "https://endpts.com/feed/"
+section = "bio"
+role = "open"
+
+[[source]]
+id = "nature-medicine"
+name = "Nature Medicine"
+url = "https://www.nature.com/nm.rss"
+section = "bio"
+role = "signal"
+
+[[source]]
+id = "nature-biotech"
+name = "Nature Biotechnology"
+url = "https://www.nature.com/nbt.rss"
+section = "bio"
+role = "signal"
+
+[[source]]
+id = "cell"
+name = "Cell"
+url = "https://www.cell.com/cell/current.rss"
+section = "bio"
+role = "signal"
+max_age_days = 8
+
+[[source]]
+id = "science-toc"
+name = "Science"
+url = "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
+section = "bio"
+role = "signal"
+max_age_days = 8
+
+[[source]]
+id = "nejm"
+name = "NEJM"
+url = "https://www.nejm.org/action/showFeed?jc=nejm&type=etoc&feed=rss"
+section = "bio"
+role = "signal"
+max_age_days = 8
+
+[[source]]
+id = "lancet"
+name = "The Lancet"
+url = "https://www.thelancet.com/rssfeed/lancet_current.xml"
+section = "bio"
+role = "signal"
+max_age_days = 8
+
+[[source]]
+id = "fda"
+name = "FDA"
+url = "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"
+section = "bio"
+role = "official"
+
+[[source]]
+id = "nih"
+name = "NIH"
+url = "https://www.nih.gov/news-releases/feed.xml"
+section = "bio"
+role = "official"
+
+[[source]]
+id = "topol"
+name = "Ground Truths"
+url = "https://erictopol.substack.com/feed"
+section = "bio"
+role = "analysis"
+
+[[source]]
+id = "pipeline"
+name = "In the Pipeline"
+url = "https://www.science.org/blogs/pipeline/feed"
+section = "bio"
+role = "analysis"
+
+# ── 周日长文（只进入周日的长文导读候选池）──────────────────
+[[source]]
+id = "aeon"
+name = "Aeon"
+url = "https://aeon.co/feed.rss"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "psyche"
+name = "Psyche"
+url = "https://psyche.co/feed"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "quanta"
+name = "Quanta Magazine"
+url = "https://www.quantamagazine.org/feed/"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "noema"
+name = "Noema"
+url = "https://www.noemamag.com/feed/"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "nautilus"
+name = "Nautilus"
+url = "https://nautil.us/feed/"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "asimov"
+name = "Asimov Press"
+url = "https://www.asimov.press/feed"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "works-in-progress"
+name = "Works in Progress"
+url = "https://www.worksinprogress.news/feed"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "knowable"
+name = "Knowable Magazine"
+url = "https://knowablemagazine.org/rss"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "new-atlantis"
+name = "The New Atlantis"
+url = "https://www.thenewatlantis.com/feed"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "undark"
+name = "Undark"
+url = "https://undark.org/feed/"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "acx"
+name = "Astral Codex Ten"
+url = "https://www.astralcodexten.com/feed"
+section = "longread"
+role = "open"
+
+[[source]]
+id = "longreads"
+name = "Longreads"
+url = "https://longreads.com/feed/"
+section = "longread"
+role = "open"

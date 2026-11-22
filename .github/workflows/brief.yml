@@ -1,0 +1,96 @@
+name: 简报
+on:
+  schedule:
+    - cron: '40 21 * * *'
+    - cron: '10 1,5,9,13,17 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 运行模式
+        type: choice
+        options: [run, fetch]
+        default: run
+      force:
+        description: 覆盖已有期刊
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ['site/**']
+concurrency:
+  group: brief
+  cancel-in-progress: false
+jobs:
+  brief:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      mode: ${{ steps.mode.outputs.mode }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
+      - run: uv sync --frozen --no-dev
+      - name: 确定运行模式
+        id: mode
+        env:
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || (github.event.schedule == '40 21 * * *' && 'run' || 'fetch') }}
+        run: echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+      - name: 恢复数据
+        id: restore
+        env:
+          DATA_REMOTE: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: scripts/data-branch.sh restore
+      - name: 抓取或生成
+        env:
+          MODE: ${{ steps.mode.outputs.mode }}
+          FORCE: ${{ inputs.force }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+        run: |
+          if [ "$MODE" = fetch ]; then
+            uv run brief fetch
+          elif [ "$FORCE" = true ]; then
+            uv run brief run --force
+          else
+            uv run brief run
+          fi
+      - name: 保存数据
+        if: always() && steps.restore.outcome == 'success'
+        env:
+          DATA_REMOTE: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: scripts/data-branch.sh save
+      - name: 保存成品
+        if: success() && steps.mode.outputs.mode == 'run'
+        run: |
+          if [ -d site/data ]; then
+            git add -f site/data
+            if ! git diff --cached --quiet; then
+              git -c user.name=daily-brief-bot -c user.email=daily-brief-bot@users.noreply.github.com commit -m "更新简报"
+              git -c user.name=daily-brief-bot -c user.email=daily-brief-bot@users.noreply.github.com pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
+  deploy:
+    needs: brief
+    if: ${{ !cancelled() && (github.event_name == 'push' || (needs.brief.result == 'success' && needs.brief.outputs.mode == 'run')) }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+      - uses: actions/deploy-pages@v5
+        id: deployment

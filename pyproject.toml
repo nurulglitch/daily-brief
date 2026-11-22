@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "daily-brief"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["feedparser", "httpx"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.scripts]
+brief = "brief.cli:main"
+
+[tool.uv]
+exclude-newer = "2026-11-12T16:00:00Z"
+
+[tool.hatch.build.targets.wheel]
+packages = ["brief"]

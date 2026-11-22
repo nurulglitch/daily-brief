@@ -1,0 +1,64 @@
+html[data-theme="paper"] {
+  --bg: #F7F1E5; --surface: #F7F1E5; --text: #2A2520; --muted: #7A6F62; --rule: #DDD1BE; --accent: #9A3324; --banner: #EFE5D4; --on-accent: #fff;
+  --body-font: var(--serif);
+}
+html[data-theme="pure"] {
+  --bg: #FFFFFF; --surface: #FFFFFF; --text: #1D1D1F; --muted: #8E8E93; --rule: #EDEDED; --accent: #3F6C8F; --banner: #F5F5F5; --on-accent: #fff;
+  --body-font: var(--sans);
+}
+html[data-theme="signal"] {
+  --bg: #F4F4F6; --surface: #FFFFFF; --text: #0F0F12; --muted: #6B6B74; --rule: #E4E4EA; --accent: #5B5BD6; --banner: #EAEAF0; --on-accent: #fff;
+  --body-font: var(--sans);
+}
+html[data-theme="paper"][data-appearance="dark"] {
+  --bg: #1B1916; --surface: #1B1916; --text: #E8DFD1; --muted: #9C9082; --rule: #37322B; --accent: #E0916F; --banner: #28231D; --on-accent: #1B1916;
+}
+html[data-theme="pure"][data-appearance="dark"] {
+  --bg: #151517; --surface: #151517; --text: #E6E6E8; --muted: #8A8A90; --rule: #2A2A2D; --accent: #86AFCF; --banner: #202023; --on-accent: #151517;
+}
+html[data-theme="signal"][data-appearance="dark"] {
+  --bg: #0D0D0F; --surface: #161619; --text: #EDEDF0; --muted: #8B8B94; --rule: #26262C; --accent: #9B9BF5; --banner: #1C1C21; --on-accent: #0D0D0F;
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme="paper"][data-appearance="auto"] { --bg: #1B1916; --surface: #1B1916; --text: #E8DFD1; --muted: #9C9082; --rule: #37322B; --accent: #E0916F; --banner: #28231D; --on-accent: #1B1916; }
+  html[data-theme="pure"][data-appearance="auto"] { --bg: #151517; --surface: #151517; --text: #E6E6E8; --muted: #8A8A90; --rule: #2A2A2D; --accent: #86AFCF; --banner: #202023; --on-accent: #151517; }
+  html[data-theme="signal"][data-appearance="auto"] { --bg: #0D0D0F; --surface: #161619; --text: #EDEDF0; --muted: #8B8B94; --rule: #26262C; --accent: #9B9BF5; --banner: #1C1C21; --on-accent: #0D0D0F; }
+}
+html[data-appearance="light"] { color-scheme: light; }
+html[data-appearance="dark"] { color-scheme: dark; }
+
+html[data-theme="paper"] .masthead { border-bottom: 4px double var(--text); }
+html[data-theme="paper"] .news-section > .section-label { display: flex; align-items: center; gap: 14px; }
+html[data-theme="paper"] .news-section > .section-label::after { content: ""; height: 1px; flex: 1; background: var(--rule); }
+html[data-theme="paper"] .news-card + .news-card { border-top: 1px solid var(--rule); }
+html[data-theme="paper"] .is-read .read-mark { display: block; color: var(--accent); font: 16px/1.9 var(--sans); }
+html[data-theme="paper"] .takes { border-left: 2px solid var(--rule); padding-left: 18px; font-family: var(--kai); }
+html[data-theme="paper"] .pitch { font-family: var(--kai); }
+html[data-theme="paper"] .end-block.is-done { border-top: 4px double var(--text); }
+
+html[data-theme="pure"] body { line-height: 1.85; }
+html[data-theme="pure"] .masthead { margin-bottom: 56px; }
+html[data-theme="pure"] .news-section { margin-bottom: 64px; }
+html[data-theme="pure"] .news-section > .section-label { margin-bottom: 18px; }
+html[data-theme="pure"] .card-header { gap: 16px; padding: 17px 0; }
+html[data-theme="pure"] .read-mark { display: block; flex: none; width: 20px; height: 20px; margin-top: 5px; border: 1px solid var(--rule); border-radius: 50%; color: var(--on-accent); font: 12px/18px var(--sans); text-align: center; }
+html[data-theme="pure"] .is-read .read-mark { background: var(--accent); border-color: var(--accent); }
+html[data-theme="pure"] .card-body { padding-left: 36px; }
+html[data-theme="pure"] .card-chevron { opacity: .55; }
+html[data-theme="pure"] .read-button, html[data-theme="pure"] .egg-button, html[data-theme="pure"] .copy-button, html[data-theme="pure"] .original-link { border-radius: 7px; }
+html[data-theme="pure"] .end-block.is-done .end-title::before { content: "✓"; display: inline-block; width: 20px; height: 20px; margin-right: 12px; border-radius: 50%; background: var(--accent); color: var(--on-accent); font: 12px/20px var(--sans); text-align: center; vertical-align: 2px; }
+
+html[data-theme="signal"] h1, html[data-theme="signal"] h2, html[data-theme="signal"] .card-title { font-weight: 650; letter-spacing: -.025em; }
+html[data-theme="signal"] .brand { font-family: var(--sans); }
+html[data-theme="signal"] .section-label, html[data-theme="signal"] .block-label, html[data-theme="signal"] .masthead-meta, html[data-theme="signal"] .tags, html[data-theme="signal"] .longread-meta { font-family: var(--mono); }
+html[data-theme="signal"] .segments { display: flex; gap: 4px; margin-top: 24px; }
+html[data-theme="signal"] .segments span { flex: 1; height: 3px; background: var(--rule); }
+html[data-theme="signal"] .segments span.filled { background: var(--accent); }
+html[data-theme="signal"] .news-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; margin-top: 10px; }
+html[data-theme="signal"] .card-header { padding: 19px 20px; }
+html[data-theme="signal"] .is-read:not(.is-open) .card-header { padding: 14px 20px; }
+html[data-theme="signal"] .is-read .read-mark { display: block; color: var(--accent); font: 16px/1.9 var(--sans); }
+html[data-theme="signal"] .card-body { padding: 0 20px 24px; }
+html[data-theme="signal"] .takes { background: var(--bg); border-left: 3px solid var(--accent); padding: 16px; border-radius: 0 8px 8px 0; }
+html[data-theme="signal"] .read-button, html[data-theme="signal"] .egg-button, html[data-theme="signal"] .copy-button, html[data-theme="signal"] .original-link, html[data-theme="signal"] .settings-choices button { border-radius: 999px; }
+html[data-theme="signal"] .end-block.is-done .end-title::before { content: "END"; display: inline-block; margin-right: 12px; padding: 2px 7px; border: 1px solid var(--accent); border-radius: 4px; font: 10px/1.5 var(--mono); letter-spacing: .05em; vertical-align: 2px; }
