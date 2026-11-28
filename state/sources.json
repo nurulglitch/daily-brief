@@ -1,0 +1,695 @@
+{
+ "bbc-world": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "guardian-world": {
+  "etag": "W/\"hash6899168593665424588\"",
+  "modified": null,
+  "last_ok": "2026-11-23T08:55:38Z",
+  "last_new": "2026-11-23T08:55:38Z",
+  "fail_streak": 14,
+  "last_error": "Client error '403 Forbidden' for url 'https://www.theguardian.com/world/rss'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+  "undated": 0
+ },
+ "aljazeera": {
+  "etag": "W/\"99d21cf034ba8eebf00ab4c6f9617b39\"",
+  "modified": "Sat, 28 Nov 2026 08:26:30 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "dw-world": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "npr-world": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "france24": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "bbc-zh": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "nyt-world": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "ft-world": {
+  "etag": "W/\"2fff-MZF8cOLyCTug9TvIr3XeKWYgx3s\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "economist-intl": {
+  "etag": "W/\"16302a01c51a2179626246805119dd8e\"",
+  "modified": "Fri, 27 Nov 2026 18:11:53 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "un-news": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "foreign-affairs": {
+  "etag": "W/\"1795854987\"",
+  "modified": "Sat, 28 Nov 2026 08:36:27 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T09:37:49Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "foreign-policy": {
+  "etag": "W/\"fcdbd10c7ab40bf96703638d49289b61\"",
+  "modified": "Fri, 27 Nov 2026 15:12:19 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "the-diplomat": {
+  "etag": "\"7d763f9df988f737e263b46d0cdd71db\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "defense-news": {
+  "etag": "W/\"e820265c572ad2be2643e62ab2c72407\"",
+  "modified": "Fri, 27 Nov 2026 14:23:50 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "breaking-defense": {
+  "etag": "\"1222724800a6f863ac9485ca89a91d91\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "defense-one": {
+  "etag": null,
+  "modified": "Sat, 28 Nov 2026 08:43:27 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-25T22:26:47Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "twz": {
+  "etag": "W/\"feca2c9201c612e936a5d031ac3597b5\"",
+  "modified": "Sat, 28 Nov 2026 08:48:50 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "kyiv-independent": {
+  "etag": "W/\"4184-hwdUzU6Ol7KEGtvETzfiz/0CHFg\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "times-of-israel": {
+  "etag": null,
+  "modified": null,
+  "last_ok": null,
+  "last_new": null,
+  "fail_streak": 18,
+  "last_error": "Client error '403 Forbidden' for url 'https://www.timesofisrael.com/feed/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+  "undated": 0
+ },
+ "war-on-the-rocks": {
+  "etag": "\"04b6c196ebbad4c4b0c750d9393d1b65\"",
+  "modified": "Thu, 26 Nov 2026 08:30:44 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-26T09:24:42Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "crisis-group": {
+  "etag": "\"1795476934\"",
+  "modified": "Mon, 23 Nov 2026 23:35:34 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-24T10:50:22Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "bellingcat": {
+  "etag": "\"9d9a6aa93c0a41f923377a7a0ad4727e\"",
+  "modified": "Thu, 26 Nov 2026 15:22:55 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": null,
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "lawfare": {
+  "etag": null,
+  "modified": "Sat, 28 Nov 2026 08:51:27 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "cnbc-economy": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "ft-zh": {
+  "etag": "W/\"29da-Yha9EYuktieWAPRz/QHtXJuFfCU\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": null,
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "bloomberg-markets": {
+  "etag": "W/\"3bd9-Z4BB5SqbXJ+o1JByTZgNEKW8uiI\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "bloomberg-economics": {
+  "etag": "W/\"3acb-OZ9xTUF0EQnWt9pz0UD1gxA0HRU\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "ft-home": {
+  "etag": "W/\"20d4-6Nos67mwT1RiBRDtqzHPkVRVtSE\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "economist-finance": {
+  "etag": "W/\"30bb2a0be48f5fa76d7ff61337a06dd4\"",
+  "modified": "Fri, 27 Nov 2026 13:50:02 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-26T22:15:40Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "fed": {
+  "etag": "\"b960da96177ddd1:0\"",
+  "modified": "Wed, 25 Nov 2026 20:00:15 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-25T22:26:47Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "ecb": {
+  "etag": "\"myra-a2fcb97e\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "project-syndicate": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "marginal-revolution": {
+  "etag": "\"7a388d40747ec9a3ff0939aec0a6ce39\"",
+  "modified": "Sat, 28 Nov 2026 06:02:07 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "noahpinion": {
+  "etag": "W/\"ca07f-+Ko93gHmq8E2aAZ/8pKPi+pPtsQ\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "liberty-street": {
+  "etag": "W/\"266891fdfc302c7326d5ea2cd15c8cad\"",
+  "modified": "Wed, 25 Nov 2026 17:07:48 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-24T22:59:09Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "mit-tr": {
+  "etag": "W/\"777316aa5bd542835cdf44da4160da74\"",
+  "modified": "Fri, 27 Nov 2026 13:00:08 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "ars": {
+  "etag": "\"685d12e9a8df14415dd5e055bd3bcade\"",
+  "modified": "Fri, 27 Nov 2026 21:53:41 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "verge-ai": {
+  "etag": "W/\"70a907ee9fdde16c662fb283e7064e93\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "the-decoder": {
+  "etag": "\"c62dbbcb462156a55399e3cf9d158010\"",
+  "modified": "Fri, 27 Nov 2026 19:39:16 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "techcrunch-ai": {
+  "etag": "W/\"295f33c386134188603235972bd1fc1e\"",
+  "modified": "Fri, 27 Nov 2026 17:09:46 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-26T22:15:40Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "ieee-spectrum": {
+  "etag": "\"e3e985995e4b678b2991f8980391182d\"",
+  "modified": "Fri, 27 Nov 2026 14:01:57 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "spacenews": {
+  "etag": "W/\"52fe0d9529fe9878ea2b11035cf791f1\"",
+  "modified": "Sat, 28 Nov 2026 03:41:55 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "hn-300": {
+  "etag": null,
+  "modified": "Fri, 27 Nov 2026 23:06:29 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "openai": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-25T04:34:29Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "deepmind": {
+  "etag": "\"VUJDcg\"",
+  "modified": "Mon, 23 Nov 2026 16:59:40 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-25T22:26:47Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "semianalysis": {
+  "etag": "W/\"2ff679-rh3smoAPWaC4JdKc4ofsGhL94uE\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "import-ai": {
+  "etag": null,
+  "modified": null,
+  "last_ok": null,
+  "last_new": null,
+  "fail_streak": 18,
+  "last_error": "Client error '403 Forbidden' for url 'https://importai.substack.com/feed'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+  "undated": 0
+ },
+ "stratechery": {
+  "etag": "W/\"25619dd8ab9da41a7316dacbc7991038\"",
+  "modified": "Tue, 24 Nov 2026 17:53:36 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-24T22:59:09Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "latent-space": {
+  "etag": null,
+  "modified": "Sat, 28 Nov 2026 08:48:40 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "simonw": {
+  "etag": null,
+  "modified": "Fri, 27 Nov 2026 23:57:17 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-28T08:51:26Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "stat": {
+  "etag": "\"3eba7e481f4291c72d31b8688506e31a\"",
+  "modified": "Fri, 27 Nov 2026 16:07:33 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "nature": {
+  "etag": "\"9b32371fa95e62c99afbf00d531e5b7c\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "science-news": {
+  "etag": null,
+  "modified": "Sat, 28 Nov 2026 08:37:08 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-26T03:46:13Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "endpoints": {
+  "etag": "\"7f7e7542112cc8f298052be46ff4ac2d-gzip\"",
+  "modified": "Wed, 25 Nov 2026 17:56:06 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-25T22:26:47Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "nature-medicine": {
+  "etag": "\"84d28dcede9f8001f5b47fe45f39d134\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "nature-biotech": {
+  "etag": "\"bdbe16bd4f6217ec95cf3c4656b1d3f1\"",
+  "modified": null,
+  "last_ok": "2026-11-27T21:54:54Z",
+  "last_new": "2026-11-24T22:59:09Z",
+  "fail_streak": 1,
+  "last_error": "RSS 解析失败",
+  "undated": 0
+ },
+ "cell": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-25T22:26:47Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "science-toc": {
+  "etag": null,
+  "modified": "Thu, 26 Nov 2026 20:00:58 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-26T22:15:40Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "nejm": {
+  "etag": null,
+  "modified": "Thu, 26 Nov 2026 09:00:33 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-26T09:24:42Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "lancet": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T03:47:09Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "fda": {
+  "etag": "\"1795825621\"",
+  "modified": "Sat, 28 Nov 2026 00:27:01 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-23T21:14:33Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "nih": {
+  "etag": "W/\"1795846304\"",
+  "modified": "Sat, 28 Nov 2026 06:11:44 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-24T22:59:09Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "topol": {
+  "etag": null,
+  "modified": null,
+  "last_ok": null,
+  "last_new": null,
+  "fail_streak": 18,
+  "last_error": "Client error '403 Forbidden' for url 'https://erictopol.substack.com/feed'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+  "undated": 0
+ },
+ "pipeline": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-24T22:59:09Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "aeon": {
+  "etag": "\"8075540798a0a460e33774dffc80694e\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "psyche": {
+  "etag": "W/\"3abfd8041a8f24dd4be3f706bc3f898e\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "quanta": {
+  "etag": "\"239e1a5b50383a6edca9b1d2528a6d36-gzip\"",
+  "modified": "Wed, 25 Nov 2026 14:24:09 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-25T22:26:47Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "noema": {
+  "etag": "\"31e0a1cc636beeb67cdd328bfced37fb\"",
+  "modified": "Tue, 24 Nov 2026 19:20:10 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-22T13:15:49Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "nautilus": {
+  "etag": "W/\"k4qlakpqbr8qn\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "asimov": {
+  "etag": "W/\"144b05-wzrGzMBxwd+BZyNlo6Lts7ziq2I\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-22T13:15:49Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "works-in-progress": {
+  "etag": "W/\"9dc25-Sys6LNqF4pZS0We/y1Aqw9dK6S0\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-24T22:59:09Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "knowable": {
+  "etag": null,
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-22T13:15:49Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "new-atlantis": {
+  "etag": "W/\"fd940eb5e1b39d8b53093123d07d976c\"",
+  "modified": "Tue, 24 Nov 2026 20:43:33 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": null,
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "undark": {
+  "etag": "\"b14aebaafc4e3ad22e049d2ceb2d1d69\"",
+  "modified": "Fri, 27 Nov 2026 08:00:12 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T09:37:49Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "acx": {
+  "etag": "W/\"9116f-UUBinbDfAaN/v8S+png4i+7DV34\"",
+  "modified": null,
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-27T21:54:54Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ },
+ "longreads": {
+  "etag": "W/\"04f2a7291f4cbc2c6669afe3b984b75f\"",
+  "modified": "Thu, 26 Nov 2026 20:56:33 GMT",
+  "last_ok": "2026-11-28T08:51:26Z",
+  "last_new": "2026-11-26T22:15:40Z",
+  "fail_streak": 0,
+  "last_error": null,
+  "undated": 0
+ }
+}
